@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { createStore, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
-import createHistory from 'history/createMemoryHistory'
+import { createMemoryHistory as createHistory } from 'history';
 
 import ConnectedRouter from '../ConnectedRouter'
 import { routerReducer } from '../reducer'

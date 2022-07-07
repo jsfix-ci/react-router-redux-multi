@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 
 import { createStore, applyMiddleware } from 'redux';
-import createHistory from 'history/createBrowserHistory';
+import { createBrowserHistory as createHistory } from 'history';
 import { routerReducer, routerMiddleware } from 'react-router-redux';
 
 import { connect } from 'react-redux';
